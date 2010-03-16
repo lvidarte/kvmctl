@@ -1,0 +1,29 @@
+==============================================================================
+KVMCTL - Simple way to manage your KVM virtual machines
+==============================================================================
+
+Use example:
+  # kvmctl.sh --list
+  machine1
+  machine2
+  machineN
+  # kvmctl.sh machine2 startd
+  Starting up 'machine2' ... (daemon mode)
+  # kvmctl.sh machine2 --show
+  MACHINE             PID     STIME   TIME
+  machine1            4856    Feb11   10:34:59
+  machine2            11155   Mar12   00:05:45
+  # kvmctl.sh machine1 stop
+  Shutting down 'machine1' ...
+
+Config file example:
+  KVM_M=1G
+  KVM_HDA=$BASEDIR/$MACHINE/root.qcow2
+  KVM_HDB=$BASEDIR/$MACHINE/swap.qcow2
+  KVM_HDC=$BASEDIR/.imgs/mysql.raw
+  KVM_HDD=$BASEDIR/.imgs/tmp.qcow2
+  KVM_NET="nic,macaddr=52:54:00:00:02:52 -net tap"
+  KVM_PIDFILE=/var/run/192.168.0.249.pid
+  KVM_TCP_PORT=10000
+  KVM_MONITOR="tcp:127.0.0.1:${KVM_TCP_PORT},server,nowait"
+  KVM_EXTRA=
