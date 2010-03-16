@@ -1,6 +1,7 @@
 #!/bin/bash
 # ============================================================================
 # KVMCTL - Simple way to manage your KVM virtual machines
+# Inspired by git://github.com/mschmitt/kvmctl.git
 #
 # @see    http://github.com/lvidarte/kvmctl.git
 # @author Leonardo Vidarte <lvidarte[AT]gmail.com>
