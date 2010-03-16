@@ -9,7 +9,7 @@ Use example:
   machineN
   # kvmctl.sh machine2 startd
   Starting up 'machine2' ... (daemon mode)
-  # kvmctl.sh machine2 --show
+  # kvmctl.sh --show
   MACHINE             PID     STIME   TIME
   machine1            4856    Feb11   10:34:59
   machine2            11155   Mar12   00:05:45
