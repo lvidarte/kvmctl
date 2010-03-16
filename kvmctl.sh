@@ -2,7 +2,7 @@
 # ============================================================================
 # KVMCTL - Simple way to manage your KVM virtual machines
 #
-# @see    http://github.com/lvidarte/kvmctl
+# @see    http://github.com/lvidarte/kvmctl.git
 # @author Leonardo Vidarte <lvidarte[AT]gmail.com>
 # ============================================================================
 
